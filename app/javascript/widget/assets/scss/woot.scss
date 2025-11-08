@@ -491,3 +491,24 @@ blockquote {
          transition-colors;
   line-height: 1.25;
 }
+
+/* ==== input_select 強制滿版：鎖定 .woot--button 本體 ==== */
+.woot-widget-holder .rich-content--input-select .woot--button,
+.woot-widget-holder .woot--input-select .woot--button,
+.woot-widget-holder .rich-content--input_select .woot--button,
+.woot-widget-holder .woot--input_select .woot--button {
+  display: block !important;        /* 把內建 inline-flex 壓掉 */
+  width: 100% !important;
+  text-align: left !important;
+  border-radius: 12px !important;
+  padding: 12px 16px !important;
+}
+
+/* 每個選項之間留間距（涵蓋兩種命名） */
+.woot-widget-holder .rich-content--input-select li,
+.woot-widget-holder .woot--input-select li,
+.woot-widget-holder .rich-content--input_select li,
+.woot-widget-holder .woot--input_select li {
+  margin-bottom: 8px !important;
+}
+
